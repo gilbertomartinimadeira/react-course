@@ -1,4 +1,14 @@
-ReactDOM.render(<ul>
-    <li>First Item</li>
-    <li>Second Item</li>
-    </ul>, document.getElementById('root'));
+const Navbar =
+    (<nav>
+        <h1 className="header">Crossmade</h1>
+        <ul>
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    );
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(Navbar);
